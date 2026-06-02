@@ -3,7 +3,7 @@ import { ArrowRight, Star, ShieldCheck, Clock, MapPin } from 'lucide-react';
 
 export function Hero({ onOpenBooking }: { onOpenBooking: () => void }) {
   return (
-    <section className="relative min-h-[calc(100vh-88px)] flex items-center pt-4 pb-12 overflow-hidden">
+    <section className="relative min-h-[calc(100vh-88px)] flex items-center pt-0 pb-12 overflow-hidden">
       {/* Background Gradients & Shapes */}
       <div className="absolute inset-0 z-0 bg-gray-50 dark:bg-gray-950">
         {/* Soft glow in top right */}
@@ -15,16 +15,7 @@ export function Hero({ onOpenBooking }: { onOpenBooking: () => void }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
         
         {/* Text Content */}
-        <div className="max-w-2xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white dark:bg-gray-900 shadow-sm border border-gray-100 dark:border-gray-800 mb-6"
-          >
-            <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
-            <span className="text-xs font-semibold uppercase tracking-wider text-gray-700 dark:text-gray-300">Accepting New Patients Today</span>
-          </motion.div>
+        <div className="max-w-2xl pt-4">
 
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
