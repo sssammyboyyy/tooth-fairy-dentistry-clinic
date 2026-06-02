@@ -3,7 +3,7 @@ import { ArrowRight, Star, ShieldCheck, Clock, MapPin } from 'lucide-react';
 
 export function Hero({ onOpenBooking }: { onOpenBooking: () => void }) {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-10 pb-20 overflow-hidden">
+    <section className="relative min-h-[calc(100vh-88px)] flex items-center pt-4 pb-12 overflow-hidden">
       {/* Background Gradients & Shapes */}
       <div className="absolute inset-0 z-0 bg-gray-50 dark:bg-gray-950">
         {/* Soft glow in top right */}
@@ -89,20 +89,6 @@ export function Hero({ onOpenBooking }: { onOpenBooking: () => void }) {
             </div>
           </motion.div>
           
-          {/* Social Media Collage under Trust Signals */}
-          <motion.div 
-             initial={{ opacity: 0, y: 20 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8, delay: 1 }}
-             className="mt-10 mb-8"
-          >
-             <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Behind the Smiles</h4>
-             <div className="grid grid-cols-3 gap-3">
-               <img src="/socialmediaimage1.jpg" className="rounded-xl object-cover h-24 sm:h-32 w-full shadow-md" alt="Social Media 1" />
-               <img src="/socialmediaimage2.jpg" className="rounded-xl object-cover h-24 sm:h-32 w-full shadow-md" alt="Social Media 2" />
-               <img src="/socialmediaimage3.jpg" className="rounded-xl object-cover h-24 sm:h-32 w-full shadow-md" alt="Social Media 3" />
-             </div>
-          </motion.div>
         </div>
 
         {/* Visual Composition */}

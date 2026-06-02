@@ -35,7 +35,7 @@ export function About({ onOpenBooking }: { onOpenBooking: () => void }) {
               className="relative z-10 rounded-3xl overflow-hidden aspect-[4/5] max-w-md mx-auto shadow-2xl bg-gray-100 dark:bg-gray-800 border-4 border-white/80 dark:border-gray-900/80"
             >
                <img 
-                src="/dr_lekota_headshot_2.jpg" 
+                src="/drgreenprofilepic.png" 
                 alt="Dr. Lesedi Lekota" 
                 className="w-full h-full object-cover object-center scale-105"
               />

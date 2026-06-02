@@ -22,6 +22,35 @@ export function Footer({ onOpenBooking }: { onOpenBooking: () => void }) {
         </div>
       </section>
 
+      {/* Social Media Gallery */}
+      <section className="bg-gray-50 dark:bg-gray-900 py-16 border-t border-gray-100 dark:border-gray-800">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+          <h3 className="text-gray-900 dark:text-white font-bold text-2xl mb-8 flex items-center justify-center gap-2">
+            <Instagram size={28} className="text-primary-600" /> Follow us Behind the Smiles
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+             <div className="relative group overflow-hidden rounded-2xl shadow-md">
+               <img src="/socialmediaimage1.jpg" className="object-cover h-64 w-full group-hover:scale-105 transition-transform duration-500" alt="Social Media 1" />
+               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                 <Instagram size={32} className="text-white" />
+               </div>
+             </div>
+             <div className="relative group overflow-hidden rounded-2xl shadow-md">
+               <img src="/socialmediaimage2.jpg" className="object-cover h-64 w-full group-hover:scale-105 transition-transform duration-500" alt="Social Media 2" />
+               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                 <Instagram size={32} className="text-white" />
+               </div>
+             </div>
+             <div className="relative group overflow-hidden rounded-2xl shadow-md">
+               <img src="/socialmediaimage3.jpg" className="object-cover h-64 w-full group-hover:scale-105 transition-transform duration-500" alt="Social Media 3" />
+               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                 <Instagram size={32} className="text-white" />
+               </div>
+             </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer Details */}
       <footer className="bg-gray-950 pt-20 pb-10 text-gray-300 border-t border-gray-900">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -44,6 +73,11 @@ export function Footer({ onOpenBooking }: { onOpenBooking: () => void }) {
                 </a>
                 <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-primary-600 hover:text-white transition-colors">
                   <Instagram size={18} />
+                </a>
+                <a href="#" aria-label="TikTok" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center hover:bg-primary-600 hover:text-white transition-colors">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/>
+                  </svg>
                 </a>
               </div>
             </div>
