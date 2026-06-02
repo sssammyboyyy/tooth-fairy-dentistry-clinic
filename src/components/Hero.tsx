@@ -106,7 +106,7 @@ export function Hero({ onOpenBooking }: { onOpenBooking: () => void }) {
             initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="absolute -top-6 left-12 bg-white/95 dark:bg-gray-900/95 p-3.5 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 flex items-center gap-3 backdrop-blur-sm"
+            className="absolute top-4 sm:top-8 -left-4 sm:-left-6 bg-white/95 dark:bg-gray-900/95 p-3.5 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 flex items-center gap-3 backdrop-blur-sm z-20"
           >
             <div className="w-8 h-8 rounded-lg bg-sky-50 dark:bg-sky-900/20 text-primary-600 flex items-center justify-center shrink-0">
               <MapPin size={16} />

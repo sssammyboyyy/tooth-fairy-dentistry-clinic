@@ -72,8 +72,8 @@ export function Navbar({ onOpenBooking }: { onOpenBooking: () => void }) {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={`sticky top-0 z-40 w-full transition-all duration-300 ${
           isScrolled 
-            ? 'bg-white/90 dark:bg-gray-950/90 backdrop-blur-md shadow-sm py-2' 
-            : 'bg-white dark:bg-gray-950 py-3'
+            ? 'bg-white/90 dark:bg-gray-950/90 backdrop-blur-md shadow-sm py-1' 
+            : 'bg-white dark:bg-gray-950 py-2'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
